@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eat &amp; Chill — Online Food Ordering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Eat and Chill home">
+          <span class="brand-mark">🍽️</span>
+          <span class="brand-text">Eat <span>&amp;</span> Chill</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#categories" class="nav-link">Categories</a>
+          <a href="#restaurants" class="nav-link">Restaurants</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <form class="search" role="search" aria-label="Search dishes or restaurants">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search for dishes, cuisines, restaurants..."
+            aria-label="Search"
+          />
+          <button class="btn btn-primary" type="submit" aria-label="Search">Search</button>
+        </form>
+
+        <div class="header-cta">
+          <a href="#menu" class="btn btn-primary btn-small">Order now</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="headline">Delicious meals, delivered fast</h1>
+            <p class="subhead">
+              Explore local favorites and trending cuisines on Eat &amp; Chill. Fresh, fast, and just a tap away.
+            </p>
+            <div class="hero-actions">
+              <a href="#menu" class="btn btn-primary btn-large">Browse Menu</a>
+              <a href="#restaurants" class="btn btn-ghost btn-large">Find Restaurants</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>1k+</strong> restaurants</li>
+              <li><strong>20k+</strong> happy customers</li>
+              <li><strong>30min</strong> avg delivery</li>
+            </ul>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-card art-1">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Burger" />
+            </div>
+            <div class="art-card art-2">
+              <img src="https://images.unsplash.com/photo-1541745537413-b804b0c5f61e?q=80&w=1200&auto=format&fit=crop" alt="Pasta" />
+            </div>
+            <div class="art-card art-3">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Pizza" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Shop by category</h2>
+            <p class="section-subtitle">What are you craving today?</p>
+          </div>
+          <div class="category-grid">
+            <a class="category-card" href="#menu" aria-label="Pizza">
+              <span class="category-emoji">🍕</span>
+              <span class="category-name">Pizza</span>
+            </a>
+            <a class="category-card" href="#menu" aria-label="Burgers">
+              <span class="category-emoji">🍔</span>
+              <span class="category-name">Burgers</span>
+            </a>
+            <a class="category-card" href="#menu" aria-label="Indian">
+              <span class="category-emoji">🍛</span>
+              <span class="category-name">Indian</span>
+            </a>
+            <a class="category-card" href="#menu" aria-label="Chinese">
+              <span class="category-emoji">🥡</span>
+              <span class="category-name">Chinese</span>
+            </a>
+            <a class="category-card" href="#menu" aria-label="Desserts">
+              <span class="category-emoji">🍰</span>
+              <span class="category-name">Desserts</span>
+            </a>
+            <a class="category-card" href="#menu" aria-label="Drinks">
+              <span class="category-emoji">🥤</span>
+              <span class="category-name">Drinks</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="restaurants" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Popular restaurants</h2>
+            <p class="section-subtitle">Top-rated spots near you</p>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1200&auto=format&fit=crop" alt="Urban Grill" />
+                <span class="badge">4.7★</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Urban Grill</h3>
+                <p class="card-meta">Burgers • Fast Food • $$</p>
+                <div class="card-footer">
+                  <span class="chip">30–40 min</span>
+                  <span class="chip">Free delivery</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1200&auto=format&fit=crop" alt="Little Italy" />
+                <span class="badge">4.8★</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Little Italy</h3>
+                <p class="card-meta">Pizza • Pasta • $$$</p>
+                <div class="card-footer">
+                  <span class="chip">20–30 min</span>
+                  <span class="chip">₹29 delivery</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1555298870-29e7d7f1e3cc?q=80&w=1200&auto=format&fit=crop" alt="Spice Route" />
+                <span class="badge">4.6★</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Spice Route</h3>
+                <p class="card-meta">Indian • North Indian • $$</p>
+                <div class="card-footer">
+                  <span class="chip">35–45 min</span>
+                  <span class="chip">₹19 delivery</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Featured dishes</h2>
+            <p class="section-subtitle">Hand-picked favorites, ready to order</p>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Classic Cheeseburger" class="menu-img" />
+              <div class="menu-body">
+                <h3 class="menu-title">Classic Cheeseburger</h3>
+                <p class="menu-desc">Juicy patty, cheddar cheese, fresh veggies.</p>
+                <div class="menu-row">
+                  <span class="price">₹199</span>
+                  <button class="btn btn-primary btn-small" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Margherita Pizza" class="menu-img" />
+              <div class="menu-body">
+                <h3 class="menu-title">Margherita Pizza</h3>
+                <p class="menu-desc">Tomato, mozzarella, fresh basil.</p>
+                <div class="menu-row">
+                  <span class="price">₹299</span>
+                  <button class="btn btn-primary btn-small" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1541745537413-b804b0c5f61e?q=80&w=1200&auto=format&fit=crop" alt="Creamy Alfredo Pasta" class="menu-img" />
+              <div class="menu-body">
+                <h3 class="menu-title">Creamy Alfredo Pasta</h3>
+                <p class="menu-desc">Rich alfredo sauce with parmesan.</p>
+                <div class="menu-row">
+                  <span class="price">₹259</span>
+                  <button class="btn btn-primary btn-small" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4856?q=80&w=1200&auto=format&fit=crop" alt="Butter Chicken" class="menu-img" />
+              <div class="menu-body">
+                <h3 class="menu-title">Butter Chicken</h3>
+                <p class="menu-desc">Tender chicken simmered in buttery gravy.</p>
+                <div class="menu-row">
+                  <span class="price">₹329</span>
+                  <button class="btn btn-primary btn-small" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200&auto=format&fit=crop" alt="Chocolate Lava Cake" class="menu-img" />
+              <div class="menu-body">
+                <h3 class="menu-title">Chocolate Lava Cake</h3>
+                <p class="menu-desc">Warm, gooey center, served with cream.</p>
+                <div class="menu-row">
+                  <span class="price">₹179</span>
+                  <button class="btn btn-primary btn-small" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=1200&auto=format&fit=crop" alt="Fresh Lemonade" class="menu-img" />
+              <div class="menu-body">
+                <h3 class="menu-title">Fresh Lemonade</h3>
+                <p class="menu-desc">Zesty, refreshing, lightly sweetened.</p>
+                <div class="menu-row">
+                  <span class="price">₹89</span>
+                  <button class="btn btn-primary btn-small" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <div class="cta">
+            <h2 class="section-title">Want to list your restaurant?</h2>
+            <p class="section-subtitle">
+              Join Eat &amp; Chill to reach thousands of hungry customers in your city.
+            </p>
+            <a href="#" class="btn btn-primary btn-large" role="button">Get started</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <a href="#home" class="brand brand-footer">
+            <span class="brand-mark">🍽️</span>
+            <span class="brand-text">Eat <span>&amp;</span> Chill</span>
+          </a>
+          <p class="footer-text">Bringing great food to your doorstep since 2025.</p>
+        </div>
+        <nav class="footer-col">
+          <h4 class="footer-title">Discover</h4>
+          <a href="#categories" class="footer-link">Categories</a>
+          <a href="#restaurants" class="footer-link">Restaurants</a>
+          <a href="#menu" class="footer-link">Menu</a>
+        </nav>
+        <nav class="footer-col">
+          <h4 class="footer-title">Company</h4>
+          <a href="#contact" class="footer-link">Partner with us</a>
+          <a href="#" class="footer-link">Careers</a>
+          <a href="#" class="footer-link">Help &amp; Support</a>
+        </nav>
+        <div class="footer-col">
+          <h4 class="footer-title">Get the app</h4>
+          <div class="app-badges">
+            <a class="app-badge" href="#" aria-label="Get it on Google Play">Google Play</a>
+            <a class="app-badge" href="#" aria-label="Download on the App Store">App Store</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Eat &amp; Chill. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#" class="footer-link">Privacy</a>
+          <a href="#" class="footer-link">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
+
